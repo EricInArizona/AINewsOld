@@ -149,8 +149,8 @@ public class URLParse
       return false;
 
     // Don't add new Spanish links.
-    if( isSpanish( link ))
-      return false;
+    // if( isSpanish( link ))
+      // return false;
 
     // mApp.showStatusAsync( "Link: " + link );
 
@@ -242,6 +242,8 @@ public class URLParse
     badLinkArray.append( new StrA(
     ".foxnews.com/opinion/" ));
 
+    badLinkArray.append( new StrA(
+      "libertystreeteconomics.newyorkfed.org/" ));
 
     badLinkArray.append( new StrA(
    ".foxnews.com/video/" ));
@@ -298,8 +300,33 @@ public class URLParse
     badLinkArray.append( new StrA(
                    ".foxbusiness.com/terms-of-use" ));
     badLinkArray.append( new StrA(
-                             "//www.facebook.com/" ));
-    badLinkArray.append( new StrA( "//twitter.com/" ));
+                             "facebook.com/" ));
+    badLinkArray.append( new StrA( "twitter.com/" ));
+
+    badLinkArray.append( new StrA( 
+                         "instagram.com/" ));
+
+    badLinkArray.append( new StrA(
+        "ballantinecommunicationsinc.com/" ));
+
+
+    badLinkArray.append( new StrA(
+          "4cornersjobs.com/" ));
+
+    badLinkArray.append( new StrA(
+                "dgomag.com" ));
+
+    badLinkArray.append( new StrA(
+       "/directoryplus.com" ));
+
+    badLinkArray.append( new StrA(
+    "durangoherald-co.newsmemory.com/" ));
+
+    badLinkArray.append( new StrA(
+        "/bcimedia.com" ));
+
+    badLinkArray.append( new StrA(
+         ".fourcornersexpos.com" ));
 
     badLinkArray.append( new StrA( ".foxnews.com/entertainment/" ));
 
@@ -353,9 +380,9 @@ public class URLParse
           "cryptographyengineering.com" )))
       return true;
 
-    if( link.containsStrA( new StrA(
-          ".iacr.org/" )))
-      return true;
+    // if( link.containsStrA( new StrA(
+    //      ".iacr.org/" )))
+    //  return true;
 
     if( link.containsStrA( new StrA(
           ".schneier.com/" )))
@@ -438,14 +465,21 @@ public class URLParse
                       ".paysonroundup.com/" )))
       return true;
 
-    if( isSpanish( link ))
-      return true;
+    // if( isSpanish( link ))
+      // return true;
+
+    mApp.showStatusAsync( 
+               "\nURLParse.hasValidDomain()" );
+    // mApp.showStatusAsync( "Unknown link:\n" );
+    mApp.showStatusAsync( link.toString() );
+    mApp.showStatusAsync( "\n" );
+
 
     return false;
     }
 
 
-
+/*
   public static boolean isSpanish( StrA link )
     {
     if( link.containsStrA( new StrA( "noticiasya.com" )))
@@ -462,11 +496,11 @@ public class URLParse
 
     return false;
     }
+*/
 
 
 
-
-  private boolean isBadLink( StrA link )
+  public boolean isBadLink( StrA link )
     {
     // wa.me is WhatsApp.
     // Messaging app owned by Facebook.

@@ -15,6 +15,7 @@ public class WebSites implements ActionListener
   private Timer getURLTimer;
   private FifoStrA urlFifo;
   private URLFileDictionary urlDictionary;
+  private URLParse urlParse;
 
 
 
@@ -32,6 +33,8 @@ public class WebSites implements ActionListener
     urlDictionary = new URLFileDictionary( mApp,
                                      fileName );
     urlDictionary.readFromFile();
+    urlParse = new URLParse( mApp, StrA.Empty );
+
     }
 
 
@@ -244,8 +247,8 @@ public class WebSites implements ActionListener
     // urlFifo.setValue( new StrA(
   // "https://libertystreeteconomics.newyorkfed.org/" ));
 
-    urlFifo.setValue( new StrA(
-      "https://www.iacr.org/news/" ));
+    // urlFifo.setValue( new StrA(
+      // "https://www.iacr.org/news/" ));
 
     // urlFifo.setValue( new StrA(
      // "https://www.schneier.com/" ));
@@ -441,8 +444,11 @@ public class WebSites implements ActionListener
           continue;
 
         howMany++;
-        if( howMany > 10 )
+        if( howMany > 30 )
           break;
+
+        if( urlParse.isBadLink( urlToGet ))
+          continue;
 
         mApp.showStatusAsync( "\nAdding to Fifo: (" +
                                    howMany + ") " +

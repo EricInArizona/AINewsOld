@@ -6,28 +6,6 @@ recentfile2	\Eric\Main\Docs\Notes.txt
 recentfile3	\Eric\Main\AINews\BuildProj.bat
 recentfile4	\Eric\Main\AINews\MainWindow.java
 recentfile5	\Eric\Main\AINews\WebSites.java
-recentfile6	
-recentfile7	
-recentfile8	
-recentfile9	
-recentfile10	
-recentfile11	
-recentfile12	
-recentfile13	
-recentfile14	
-recentfile15	
-recentfile16	
-recentfile17	
-recentfile18	
-recentfile19	
-recentfile20	
-recentfile21	
-recentfile22	
-recentfile23	
-recentfile24	
-recentfile25	
-recentfile26	
-recentfile27	
-recentfile28	
-recentfile29	
-recentfile30	
+recentfile6	\Eric\Main\AINews\URLParse.java
+recentfile7	\Eric\Main\AINews\StrA.java
+recentfile8	\Eric\Main\AINews\HtmlFile.java
