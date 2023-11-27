@@ -322,6 +322,7 @@ public class MainWindow extends JFrame implements
     menuItem.setFont( mainFont );
     fileMenu.add( menuItem );
 
+/*
     menuItem = new JMenuItem( "Analyze Spanish" );
     menuItem.setMnemonic( KeyEvent.VK_S );
     menuItem.setActionCommand( "FileAnalyzeSpanish" );
@@ -330,6 +331,7 @@ public class MainWindow extends JFrame implements
     menuItem.setBackground( Color.black );
     menuItem.setFont( mainFont );
     fileMenu.add( menuItem );
+*/
 
     menuItem = new JMenuItem( "Cancel" );
     menuItem.setMnemonic( KeyEvent.VK_C );
@@ -427,11 +429,12 @@ public class MainWindow extends JFrame implements
       webSites.analyze();
       }
 
+/*
     if( command == "FileAnalyzeSpanish" )
       {
       webSites.analyzeSpanish();
       }
-
+*/
     if( command == "FileCancel" )
       {
       showStatusAsync( "Canceled...." );

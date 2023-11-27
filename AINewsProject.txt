@@ -5,8 +5,8 @@ recentfile1	C:\Eric\Main\AINews\MainApp.java
 recentfile2	\Eric\Main\Docs\Notes.txt
 recentfile3	\Eric\Main\AINews\BuildProj.bat
 recentfile4	\Eric\Main\AINews\MainWindow.java
-recentfile5	\Eric\Main\Website\AIIntro.htm
-recentfile6	\Eric\Main\AINews\WebSites.java
+recentfile5	\Eric\Main\AINews\WebSites.java
+recentfile6	
 recentfile7	
 recentfile8	
 recentfile9	

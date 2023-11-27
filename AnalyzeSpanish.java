@@ -1,3 +1,5 @@
+/*
+
 // Copyright Eric Chauvin 2020 - 2021.
 
 
@@ -385,12 +387,12 @@ public class AnalyzeSpanish implements Runnable
                             new StrA( badS ),
                             new StrA( " " ));
 
-    badS = "visite nuestrapolítica de cookies";
+    badS = "visite nuestrapoltica de cookies";
     result = result.replace(
                             new StrA( badS ),
                             new StrA( " " ));
 
-    badS = "nuestrapolítica de cookies para";
+    badS = "nuestrapoltica de cookies para";
     result = result.replace(
                             new StrA( badS ),
                             new StrA( " " ));
@@ -400,7 +402,7 @@ public class AnalyzeSpanish implements Runnable
                             new StrA( badS ),
                             new StrA( " " ));
 
-    badS = "cookies para saber más";
+    badS = "cookies para saber ms";
     result = result.replace(
                             new StrA( badS ),
                             new StrA( " " ));
@@ -479,3 +481,5 @@ public class AnalyzeSpanish implements Runnable
 
 
   }
+
+*/

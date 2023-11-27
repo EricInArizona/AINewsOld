@@ -55,6 +55,7 @@ public class WebSites implements ActionListener
     }
 
 
+/*
   public void analyzeSpanish()
     {
     AnalyzeSpanish spanish = new AnalyzeSpanish(
@@ -62,6 +63,7 @@ public class WebSites implements ActionListener
     Thread aThread = new Thread( spanish );
     aThread.start();
     }
+*/
 
 
   public void cancel()
@@ -192,8 +194,8 @@ public class WebSites implements ActionListener
     //            "https://www.foxnews.com/" ));
 
 
-    urlFifo.setValue( new StrA(
-                  "https://www.foxbusiness.com/" ));
+    // urlFifo.setValue( new StrA(
+    //          "https://www.foxbusiness.com/" ));
 
 
   // Add it to isGoodFullFile() too.
@@ -239,25 +241,25 @@ public class WebSites implements ActionListener
     urlFifo.setValue( new StrA(
        "https://blogs.imf.org/" ));
 
-    urlFifo.setValue( new StrA(
-  "https://libertystreeteconomics.newyorkfed.org/" ));
+    // urlFifo.setValue( new StrA(
+  // "https://libertystreeteconomics.newyorkfed.org/" ));
 
     urlFifo.setValue( new StrA(
       "https://www.iacr.org/news/" ));
 
-    urlFifo.setValue( new StrA(
-      "https://www.schneier.com/" ));
+    // urlFifo.setValue( new StrA(
+     // "https://www.schneier.com/" ));
 
-  urlFifo.setValue( new StrA(
-    "https://www.openssl.org/blog/"
-                               ));
+  // urlFifo.setValue( new StrA(
+    // "https://www.openssl.org/blog/"
+    //                           ));
 
-  urlFifo.setValue( new StrA(
-    "https://www.openssl.org/news/vulnerabilities.html"
-                               ));
+  // urlFifo.setValue( new StrA(
+    // "https://www.openssl.org/news/vulnerabilities.html"
+    //                           ));
 
-  urlFifo.setValue( new StrA(
-     "https://www.usgs.gov/" ));
+  // urlFifo.setValue( new StrA(
+     // "https://www.usgs.gov/" ));
 
 
   // urlFifo.setValue( new StrA(
@@ -272,21 +274,21 @@ public class WebSites implements ActionListener
 
 
 
-  // urlFifo.setValue( new StrA(
-    // "https://www.themountainmail.com/"
-    //                           ));
+  urlFifo.setValue( new StrA(
+     "https://www.themountainmail.com/"
+                               ));
 
-  // urlFifo.setValue( new StrA(
+   // urlFifo.setValue( new StrA(
     // "https://www.chaffeecountytimes.com/special_editions/mountain_guide/"
-    //                           ));
+     //                          ));
 
   urlFifo.setValue( new StrA(
     "https://www.chaffeecountytimes.com/"
                                ));
 
-  // urlFifo.setValue( new StrA(
-    // "https://www.theflume.com/"
-     //                          ));
+  urlFifo.setValue( new StrA(
+     "https://www.theflume.com/"
+                              ));
 
   urlFifo.setValue( new StrA(
   "https://coloradomtn.edu/campuses/leadville/"
@@ -322,6 +324,7 @@ public class WebSites implements ActionListener
  "https://coloradomtn.edu/cmc-news/"
                                ));
 
+/*
 //////////
 // FRED:
 
@@ -356,6 +359,8 @@ public class WebSites implements ActionListener
   urlFifo.setValue( new StrA(
   "https://research.stlouisfed.org/publications/page1-econ/"
                                ));
+
+*/
 
 
   urlFifo.setValue( new StrA(
@@ -403,7 +408,7 @@ public class WebSites implements ActionListener
     // urlFifo.setValue( new StrA(
        //           "https://www.milenio.com/" ));
 
-    // addEmptyFilesToFifo();
+    addEmptyFilesToFifo();
     }
 
 
@@ -424,7 +429,7 @@ public class WebSites implements ActionListener
       StrA fileName = uFile.getFileName();
 
       // mApp.showStatusAsync( "" + line );
-      StrA filePath = new StrA( 
+      StrA filePath = new StrA(
                   "\\AINewsData\\URLFiles\\" );
       filePath = filePath.concat( fileName );
       // mApp.showStatusAsync( "filePath: " + filePath );
@@ -436,8 +441,7 @@ public class WebSites implements ActionListener
           continue;
 
         howMany++;
-        // 3 seconds times 100 = 300 seconds. 5 Minutes.
-        if( howMany > 10000 )
+        if( howMany > 10 )
           break;
 
         mApp.showStatusAsync( "\nAdding to Fifo: (" +
@@ -453,13 +457,13 @@ public class WebSites implements ActionListener
 
   private boolean isGoodFullFile( StrA in )
     {
-    if( in.containsStrA( new StrA(
-                      "wmicentral.com" )))
-      return true;
+    // if( in.containsStrA( new StrA(
+    //                  "wmicentral.com" )))
+      //return true;
 
-    if( in.containsStrA( new StrA(
-                      "radiationnetwork.com" )))
-      return true;
+    // if( in.containsStrA( new StrA(
+    //                  "radiationnetwork.com" )))
+    //  return true;
 
     if( in.containsStrA( new StrA( ".foxnews.com" )))
       return false;
@@ -467,11 +471,9 @@ public class WebSites implements ActionListener
     if( in.containsStrA( new StrA( ".foxbusiness.com" )))
       return false;
 
-    if( !URLParse.isSpanish( in ))
-      return false;
+    // if( !URLParse.isSpanish( in ))
+      // return false;
 
-    if( in.containsStrA( new StrA( "noticiasya.com/" )))
-      return false;
 
     return true;
     }
