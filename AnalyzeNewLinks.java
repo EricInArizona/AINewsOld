@@ -17,7 +17,7 @@ public class AnalyzeNewLinks implements Runnable
 
   public AnalyzeNewLinks( MainApp appToUse,
                                 URLFileDictionary
-                                  urlDictionaryToUse )
+                             urlDictionaryToUse )
     {
     mApp = appToUse;
 
@@ -71,7 +71,8 @@ public class AnalyzeNewLinks implements Runnable
 
 
       // mApp.showStatusAsync( "" + line );
-      StrA filePath = new StrA( "\\ALang\\URLFiles\\" );
+      StrA filePath = new StrA( 
+                 "\\AINewsData\\URLFiles\\" );
       filePath = filePath.concat( fileName );
       // mApp.showStatusAsync( "filePath: " + filePath );
 

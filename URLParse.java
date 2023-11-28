@@ -303,7 +303,7 @@ public class URLParse
                              "facebook.com/" ));
     badLinkArray.append( new StrA( "twitter.com/" ));
 
-    badLinkArray.append( new StrA( 
+    badLinkArray.append( new StrA(
                          "instagram.com/" ));
 
     badLinkArray.append( new StrA(
@@ -338,73 +338,17 @@ public class URLParse
   private boolean hasValidDomain( StrA link )
     {
     if( link.containsStrA( new StrA(
-                            "wmicentral.com" )))
-      return true;
-
-    if( link.containsStrA( new StrA(
                             "blogs.imf.org" )))
       return true;
 
-    if( link.containsStrA( new StrA(
-    "libertystreeteconomics.newyorkfed." )))
-      return true;
-
-    if( link.containsStrA( new StrA(
-                "krebsonsecurity.com" )))
-      return true;
-
-    // if( link.containsStrA( new StrA( "finance.yahoo.com/" )))
-      // return true;
-
-    if( link.containsStrA( new StrA(
-                       "www.ft.com/" )))
-      return true;
-
-    if( link.containsStrA( new StrA(
-                  "news.bitcoin.com/" )))
-      return true;
-
-    if( link.containsStrA( new StrA(
-                       "radiationnetwork.com/" )))
-      return true;
-
-    if( link.containsStrA( new StrA(
-                       "radiationnetwork.net/" )))
-      return true;
-
-    if( link.containsStrA( new StrA(
-                         "mineralab.com/" )))
-      return true;
-
-    if( link.containsStrA( new StrA(
-          "cryptographyengineering.com" )))
-      return true;
 
     // if( link.containsStrA( new StrA(
-    //      ".iacr.org/" )))
+    //                   "www.ft.com/" )))
     //  return true;
 
-    if( link.containsStrA( new StrA(
-          ".schneier.com/" )))
-      return true;
-
-    if( link.containsStrA( new StrA(
-          "rfc-editor.org" )))
-      return true;
-
-    if( link.containsStrA( new StrA(
-                        ".openssl.org/" )))
-      return true;
-
-    if( link.containsStrA( new StrA( ".usgs.gov/" )))
-      return true;
 
     if( link.containsStrA( new StrA(
    "https://www.themountainmail.com/" )))
-      return true;
-
-    if( link.containsStrA( new StrA(
-"https://www.chaffeecountytimes.com/special_editions/mountain_guide/" )))
       return true;
 
     if( link.containsStrA( new StrA(
@@ -437,42 +381,36 @@ public class URLParse
       return true;
 
 
-    if( link.containsStrA( new StrA( "durangoherald.com/" )))
-      return true;
-
-    if( link.containsStrA( new StrA( ".foxnews.com/" )))
-      return true;
-
-    if( link.containsStrA( new StrA( ".foxbusiness.com/" )))
-      return true;
-
-    if( link.containsStrA( new StrA( "sciencenews.org/" )))
-      return true;
-
-    if( link.containsStrA( new StrA( ".dcourier.com/" )))
-      return true;
-
-    if( link.containsStrA( new StrA( "azcentral.com" )))
-      return true;
-
-    if( link.containsStrA( new StrA( "llvm.org/" )))
-      return true;
-
-    if( link.containsStrA( new StrA( "leadvilleherald.com/" )))
-      return true;
-
     if( link.containsStrA( new StrA(
-                      ".paysonroundup.com/" )))
+                       "durangoherald.com/" )))
       return true;
 
-    // if( isSpanish( link ))
+    // if( link.containsStrA( new StrA(
+                      // ".foxnews.com/" )))
       // return true;
 
-    mApp.showStatusAsync( 
-               "\nURLParse.hasValidDomain()" );
+    // if( link.containsStrA( new StrA( 
+     //           ".foxbusiness.com/" )))
+      // return true;
+
+    if( link.containsStrA( new StrA(
+                        "sciencenews.org/" )))
+      return true;
+
+    // if( link.containsStrA( new StrA(
+                     //  "azcentral.com" )))
+      // return true;
+
+    if( link.containsStrA( new StrA(
+                      "leadvilleherald.com/" )))
+      return true;
+
+
+    // mApp.showStatusAsync(
+    //       "\nURLParse.hasValidDomain()" );
     // mApp.showStatusAsync( "Unknown link:\n" );
-    mApp.showStatusAsync( link.toString() );
-    mApp.showStatusAsync( "\n" );
+    // mApp.showStatusAsync( link.toString() );
+    // mApp.showStatusAsync( "\n" );
 
 
     return false;

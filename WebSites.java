@@ -15,7 +15,6 @@ public class WebSites implements ActionListener
   private Timer getURLTimer;
   private FifoStrA urlFifo;
   private URLFileDictionary urlDictionary;
-  private URLParse urlParse;
 
 
 
@@ -33,8 +32,6 @@ public class WebSites implements ActionListener
     urlDictionary = new URLFileDictionary( mApp,
                                      fileName );
     urlDictionary.readFromFile();
-    urlParse = new URLParse( mApp, StrA.Empty );
-
     }
 
 
@@ -185,13 +182,8 @@ public class WebSites implements ActionListener
     // Not this: "https://news.google.com/" ));
 
     // urlFifo.setValue( new StrA(
-     //             "https://finance.yahoo.com/news/" ));
-
-    // urlFifo.setValue( new StrA(
     //                 "https://www.ft.com/" ));
 
-    // urlFifo.setValue( new StrA(
-    //           "https://news.bitcoin.com/" ));
 
     // urlFifo.setValue( new StrA(
     //            "https://www.foxnews.com/" ));
@@ -207,59 +199,19 @@ public class WebSites implements ActionListener
     urlFifo.setValue( new StrA(
      "https://www.sciencenews.org/" ));
 
-    // urlFifo.setValue( new StrA(
-     // "https://www.dcourier.com/" ));
-
-    // urlFifo.setValue( new StrA(
-      // "https://www.paysonroundup.com/" ));
-
-    // urlFifo.setValue( new StrA(
-      // "https://www.paysonroundup.com/news/" ));
 
     // urlFifo.setValue( new StrA(
        //           "https://www.azcentral.com/" ));
 
-    // urlFifo.setValue( new StrA(
-    //              "https://llvm.org/" ));
 
-    // urlFifo.setValue( new StrA(
-       // "https://www.radiationnetwork.com/" ));
-
-    // urlFifo.setValue( new StrA(
-       // "https://www.mineralab.com/" ));
-
-    // urlFifo.setValue( new StrA(
-      // "https://www.mineralab.net/" ));
-
-    // White Mountain Independent news.
-    // urlFifo.setValue( new StrA(
-       // "https://www.wmicentral.com/" ));
-
-    urlFifo.setValue( new StrA(
-      "https://krebsonsecurity.com/" ));
-
-    urlFifo.setValue( new StrA(
-      "https://blog.cryptographyengineering.com/" ));
 
     urlFifo.setValue( new StrA(
        "https://blogs.imf.org/" ));
 
+    // Single quote needs fix.
     // urlFifo.setValue( new StrA(
   // "https://libertystreeteconomics.newyorkfed.org/" ));
 
-    // urlFifo.setValue( new StrA(
-      // "https://www.iacr.org/news/" ));
-
-    // urlFifo.setValue( new StrA(
-     // "https://www.schneier.com/" ));
-
-  // urlFifo.setValue( new StrA(
-    // "https://www.openssl.org/blog/"
-    //                           ));
-
-  // urlFifo.setValue( new StrA(
-    // "https://www.openssl.org/news/vulnerabilities.html"
-    //                           ));
 
   // urlFifo.setValue( new StrA(
      // "https://www.usgs.gov/" ));
@@ -393,23 +345,6 @@ public class WebSites implements ActionListener
     urlFifo.setValue( new StrA(
       "https://www.leadvilleherald.com/" ));
 
-    // urlFifo.setValue( new StrA(
-      // "https://www.sltrib.com/" ));
-
-    // urlFifo.setValue( new StrA(
-      // "https://www.moabtimes.com/" ));
-
-    // urlFifo.setValue( new StrA(
-     //             "https://noticiasya.com/el-paso/" ));
-
-    // urlFifo.setValue( new StrA(
-      //         "https://diario.mx/seccion/El_Paso/" ));
-
-    // urlFifo.setValue( new StrA(
-      //            "https://www.la-prensa.com.mx/" ));
-
-    // urlFifo.setValue( new StrA(
-       //           "https://www.milenio.com/" ));
 
     addEmptyFilesToFifo();
     }
@@ -447,9 +382,6 @@ public class WebSites implements ActionListener
         if( howMany > 30 )
           break;
 
-        if( urlParse.isBadLink( urlToGet ))
-          continue;
-
         mApp.showStatusAsync( "\nAdding to Fifo: (" +
                                    howMany + ") " +
                                    urlToGet );
@@ -463,22 +395,17 @@ public class WebSites implements ActionListener
 
   private boolean isGoodFullFile( StrA in )
     {
-    // if( in.containsStrA( new StrA(
-    //                  "wmicentral.com" )))
-      //return true;
+    // Single quote needs fixing.
+    if( in.containsStrA( new StrA(
+        "libertystreeteconomics.newyorkfed." )))
+      return false;
 
-    // if( in.containsStrA( new StrA(
-    //                  "radiationnetwork.com" )))
-    //  return true;
 
     if( in.containsStrA( new StrA( ".foxnews.com" )))
       return false;
 
     if( in.containsStrA( new StrA( ".foxbusiness.com" )))
       return false;
-
-    // if( !URLParse.isSpanish( in ))
-      // return false;
 
 
     return true;

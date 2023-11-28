@@ -9,3 +9,4 @@ recentfile5	\Eric\Main\AINews\WebSites.java
 recentfile6	\Eric\Main\AINews\URLParse.java
 recentfile7	\Eric\Main\AINews\StrA.java
 recentfile8	\Eric\Main\AINews\HtmlFile.java
+recentfile9	\Eric\Main\AINews\AnalyzeNewLinks.java
