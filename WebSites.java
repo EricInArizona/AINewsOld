@@ -400,11 +400,11 @@ public class WebSites implements ActionListener
         "libertystreeteconomics.newyorkfed." )))
       return false;
 
-    if( in.containsStrA( new StrA( 
+    if( in.containsStrA( new StrA(
           "politico.com//_logout" )))
       return false;
 
-    if( in.containsStrA( new StrA( 
+    if( in.containsStrA( new StrA(
          "leadvilleherald.com/users/admin/" )))
       return false;
 
