@@ -389,7 +389,7 @@ public class URLParse
                       // ".foxnews.com/" )))
       // return true;
 
-    // if( link.containsStrA( new StrA( 
+    // if( link.containsStrA( new StrA(
      //           ".foxbusiness.com/" )))
       // return true;
 

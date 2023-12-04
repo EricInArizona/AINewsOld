@@ -15,7 +15,7 @@ import javax.swing.SwingUtilities;
 class MainApp implements Runnable
   {
   public static final String versionDate =
-                              "11/28/2023";
+                              "12/4/2023";
   private MainWindow mainWin;
   // public ConfigureFile mainConfigFile;
   private String[] argsArray;

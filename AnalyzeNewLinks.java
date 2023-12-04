@@ -71,7 +71,7 @@ public class AnalyzeNewLinks implements Runnable
 
 
       // mApp.showStatusAsync( "" + line );
-      StrA filePath = new StrA( 
+      StrA filePath = new StrA(
                  "\\AINewsData\\URLFiles\\" );
       filePath = filePath.concat( fileName );
       // mApp.showStatusAsync( "filePath: " + filePath );

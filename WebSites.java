@@ -379,7 +379,7 @@ public class WebSites implements ActionListener
           continue;
 
         howMany++;
-        if( howMany > 30 )
+        if( howMany > 20 )
           break;
 
         mApp.showStatusAsync( "\nAdding to Fifo: (" +
@@ -398,6 +398,14 @@ public class WebSites implements ActionListener
     // Single quote needs fixing.
     if( in.containsStrA( new StrA(
         "libertystreeteconomics.newyorkfed." )))
+      return false;
+
+    if( in.containsStrA( new StrA( 
+          "politico.com//_logout" )))
+      return false;
+
+    if( in.containsStrA( new StrA( 
+         "leadvilleherald.com/users/admin/" )))
       return false;
 
 
