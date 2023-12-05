@@ -405,6 +405,10 @@ public class WebSites implements ActionListener
       return false;
 
     if( in.containsStrA( new StrA(
+      "themountainmail.com/users/" )))
+      return false;
+
+    if( in.containsStrA( new StrA(
          "leadvilleherald.com/users/admin/" )))
       return false;
 

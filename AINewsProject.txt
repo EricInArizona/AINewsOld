@@ -10,3 +10,24 @@ recentfile6	\Eric\Main\AINews\URLParse.java
 recentfile7	\Eric\Main\AINews\StrA.java
 recentfile8	\Eric\Main\AINews\HtmlFile.java
 recentfile9	\Eric\Main\AINews\AnalyzeNewLinks.java
+recentfile10	\Eric\Main\Website\index.html
+recentfile11	\Eric\Main\Website\TlsIndex.htm
+recentfile12	\Eric\Main\Website\AIIntro.htm
+recentfile13	
+recentfile14	
+recentfile15	
+recentfile16	
+recentfile17	
+recentfile18	
+recentfile19	
+recentfile20	
+recentfile21	
+recentfile22	
+recentfile23	
+recentfile24	
+recentfile25	
+recentfile26	
+recentfile27	
+recentfile28	
+recentfile29	
+recentfile30	
