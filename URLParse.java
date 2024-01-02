@@ -337,9 +337,9 @@ public class URLParse
 
   private boolean hasValidDomain( StrA link )
     {
-    if( link.containsStrA( new StrA(
-                            "blogs.imf.org" )))
-      return true;
+    // if( link.containsStrA( new StrA(
+    //                        "blogs.imf.org" )))
+    //  return true;
 
 
     // if( link.containsStrA( new StrA(
@@ -347,43 +347,43 @@ public class URLParse
     //  return true;
 
 
-    if( link.containsStrA( new StrA(
-   "https://www.themountainmail.com/" )))
-      return true;
+    // if( link.containsStrA( new StrA(
+   // "https://www.themountainmail.com/" )))
+     //  return true;
 
-    if( link.containsStrA( new StrA(
-        "https://www.chaffeecountytimes.com/" )))
-      return true;
+    // if( link.containsStrA( new StrA(
+     //   "https://www.chaffeecountytimes.com/" )))
+      // return true;
 
-    if( link.containsStrA( new StrA(
-                 "https://www.theflume.com/" )))
-      return true;
+    // if( link.containsStrA( new StrA(
+    //             "https://www.theflume.com/" )))
+     // return true;
 
     if( link.containsStrA( new StrA(
                  "coloradomtn.edu/" )))
       return true;
 
 
-    if( link.containsStrA( new StrA(
-                 ".economist.com/" )))
-      return true;
+    // if( link.containsStrA( new StrA(
+    //             ".economist.com/" )))
+      // return true;
 
-    if( link.containsStrA( new StrA(
-          "stlouisfed.org"  )))
-      return true;
+    // if( link.containsStrA( new StrA(
+     //     "stlouisfed.org"  )))
+      // return true;
 
-    if( link.containsStrA( new StrA(
-     ".politico.com/" )))
-      return true;
+    // if( link.containsStrA( new StrA(
+     // ".politico.com/" )))
+      // return true;
 
     if( link.containsStrA( new StrA(
          "artificialintelligence-news.com/" )))
       return true;
 
 
-    if( link.containsStrA( new StrA(
-                       "durangoherald.com/" )))
-      return true;
+    // if( link.containsStrA( new StrA(
+    //                   "durangoherald.com/" )))
+     // return true;
 
     // if( link.containsStrA( new StrA(
                       // ".foxnews.com/" )))
@@ -393,9 +393,9 @@ public class URLParse
      //           ".foxbusiness.com/" )))
       // return true;
 
-    if( link.containsStrA( new StrA(
-                        "sciencenews.org/" )))
-      return true;
+    // if( link.containsStrA( new StrA(
+     //                   "sciencenews.org/" )))
+      // return true;
 
     // if( link.containsStrA( new StrA(
                      //  "azcentral.com" )))

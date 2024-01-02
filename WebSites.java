@@ -196,8 +196,8 @@ public class WebSites implements ActionListener
   // Add it to isGoodFullFile() too.
   // _And_ URLParse.hasValidDomain()
 
-    urlFifo.setValue( new StrA(
-     "https://www.sciencenews.org/" ));
+    // urlFifo.setValue( new StrA(
+     // "https://www.sciencenews.org/" ));
 
 
     // urlFifo.setValue( new StrA(
@@ -205,8 +205,8 @@ public class WebSites implements ActionListener
 
 
 
-    urlFifo.setValue( new StrA(
-       "https://blogs.imf.org/" ));
+    // urlFifo.setValue( new StrA(
+       // "https://blogs.imf.org/" ));
 
     // Single quote needs fix.
     // urlFifo.setValue( new StrA(
@@ -229,55 +229,55 @@ public class WebSites implements ActionListener
 
 
 
-  urlFifo.setValue( new StrA(
-     "https://www.themountainmail.com/"
-                               ));
+  // urlFifo.setValue( new StrA(
+     // "https://www.themountainmail.com/"
+       //                        ));
 
    // urlFifo.setValue( new StrA(
     // "https://www.chaffeecountytimes.com/special_editions/mountain_guide/"
      //                          ));
 
-  urlFifo.setValue( new StrA(
-    "https://www.chaffeecountytimes.com/"
-                               ));
+  // urlFifo.setValue( new StrA(
+    // "https://www.chaffeecountytimes.com/"
+    //                           ));
 
-  urlFifo.setValue( new StrA(
-     "https://www.theflume.com/"
-                              ));
+  // urlFifo.setValue( new StrA(
+     // "https://www.theflume.com/"
+     //                         ));
 
-  urlFifo.setValue( new StrA(
-  "https://coloradomtn.edu/campuses/leadville/"
-                               ));
+  // urlFifo.setValue( new StrA(
+  // "https://coloradomtn.edu/campuses/leadville/"
+   //                            ));
 
-  urlFifo.setValue( new StrA(
- "https://coloradomtn.edu/campuses/leadville/programs/"
-                               ));
+  // urlFifo.setValue( new StrA(
+ // "https://coloradomtn.edu/campuses/leadville/programs/"
+  //                             ));
 
-  urlFifo.setValue( new StrA(
-  "https://coloradomtn.edu/campuses/leadville/classes/"
-                               ));
+  // urlFifo.setValue( new StrA(
+  // "https://coloradomtn.edu/campuses/leadville/classes/"
+  //                             ));
 
-  urlFifo.setValue( new StrA(
-  "https://coloradomtn.edu/campuses/leadville/faculty-staff/"
-                               ));
+  // urlFifo.setValue( new StrA(
+  // "https://coloradomtn.edu/campuses/leadville/faculty-staff/"
+  //                             ));
 
-  urlFifo.setValue( new StrA(
- "https://coloradomtn.edu/campuses/leadville/faculty-staff/page/2/"
-                               ));
+  // urlFifo.setValue( new StrA(
+ // "https://coloradomtn.edu/campuses/leadville/faculty-staff/page/2/"
+  //                             ));
 
 
-  urlFifo.setValue( new StrA(
- "https://coloradomtn.edu/campuses/leadville/faculty-staff/page/3/"
-                               ));
+  // urlFifo.setValue( new StrA(
+ // "https://coloradomtn.edu/campuses/leadville/faculty-staff/page/3/"
+   //                            ));
 
   // Four bytes problem?
   // urlFifo.setValue( new StrA(
  // "https://coloradomtn.edu/"
   //                             ));
 
-  urlFifo.setValue( new StrA(
- "https://coloradomtn.edu/cmc-news/"
-                               ));
+  // urlFifo.setValue( new StrA(
+ // "https://coloradomtn.edu/cmc-news/"
+   //                            ));
 
 /*
 //////////
@@ -318,21 +318,21 @@ public class WebSites implements ActionListener
 */
 
 
-  urlFifo.setValue( new StrA(
-  "https://www.politico.com/"
-                               ));
+  // urlFifo.setValue( new StrA(
+  // "https://www.politico.com/"
+   //                            ));
 
   urlFifo.setValue( new StrA(
   "https://www.artificialintelligence-news.com/"
                                ));
 
 
-  urlFifo.setValue( new StrA(
-    "https://www.durangoherald.com/categories/local-news/"
-                               ));
+  // urlFifo.setValue( new StrA(
+   // "https://www.durangoherald.com/categories/local-news/"
+   //                            ));
 
-  urlFifo.setValue( new StrA(
-     "https://www.durangoherald.com/" ));
+  // urlFifo.setValue( new StrA(
+    // "https://www.durangoherald.com/" ));
 
 
   // http 403 forbidden.
@@ -395,6 +395,14 @@ public class WebSites implements ActionListener
 
   private boolean isGoodFullFile( StrA in )
     {
+    if( in.containsStrA( new StrA(
+        "leadville" )))
+      return true;
+
+    return false;
+
+/*
+
     // Single quote needs fixing.
     if( in.containsStrA( new StrA(
         "libertystreeteconomics.newyorkfed." )))
@@ -421,6 +429,7 @@ public class WebSites implements ActionListener
 
 
     return true;
+*/
     }
 
 
