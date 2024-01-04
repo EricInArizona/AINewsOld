@@ -8,7 +8,7 @@ recentfile4	\Eric\Main\AINewsOld\MainWindow.java
 recentfile5	\Eric\Main\AINewsOld\WebSites.java
 recentfile6	\Eric\Main\AINewsOld\URLParse.java
 recentfile7	\Eric\Main\AINewsOld\StrA.java
-recentfile8	\Eric\Main\AINewsOld\HtmlFile.java
-recentfile9	\Eric\Main\AINewsOld\AnalyzeNewLinks.java
 recentfile10	\Eric\Main\Website\AIIntro.htm
+recentfile8	\Eric\Main\AINewsOld\HtmlFile.java
 recentfile11	\Eric\Main\AINewsOld\RunApp.bat
+recentfile9	\Eric\Main\AINewsOld\AnalyzeNewLinks.java

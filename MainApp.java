@@ -1,4 +1,4 @@
-// Copyright Eric Chauvin 2019 - 2023.
+// Copyright Eric Chauvin 2019 - 2024.
 
 
 
@@ -15,7 +15,7 @@ import javax.swing.SwingUtilities;
 class MainApp implements Runnable
   {
   public static final String versionDate =
-                              "1/2/2024";
+                              "1/4/2024";
   private MainWindow mainWin;
   // public ConfigureFile mainConfigFile;
   private String[] argsArray;

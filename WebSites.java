@@ -326,6 +326,9 @@ public class WebSites implements ActionListener
   "https://www.artificialintelligence-news.com/"
                                ));
 
+  urlFifo.setValue( new StrA(
+  "https://www.artificialintelligence-news.com/tag/healthcare/"
+         ));
 
   // urlFifo.setValue( new StrA(
    // "https://www.durangoherald.com/categories/local-news/"
@@ -342,8 +345,8 @@ public class WebSites implements ActionListener
   //                             ));
 
 
-    urlFifo.setValue( new StrA(
-      "https://www.leadvilleherald.com/" ));
+   // urlFifo.setValue( new StrA(
+   //   "https://www.leadvilleherald.com/" ));
 
 
     addEmptyFilesToFifo();
@@ -396,10 +399,50 @@ public class WebSites implements ActionListener
   private boolean isGoodFullFile( StrA in )
     {
     if( in.containsStrA( new StrA(
-        "leadville" )))
+       "/wp-login.php" )))
+      return false;
+
+    if( in.containsStrA( new StrA(
+      "/#respond" )))
+      return false;
+
+    if( in.containsStrA( new StrA(
+      "artificialintelligence-news.com" )))
       return true;
 
     return false;
+
+/*
+    if( in.containsStrA( new StrA(
+    ".leadvilleherald.com/classifieds/" )))
+     return false;
+
+    if( in.containsStrA( new StrA(
+    ".leadvilleherald.com/users/" )))
+      return false;
+
+    if( in.containsStrA( new StrA(
+    ".leadvilleherald.com/tncms/auth/" )))
+      return false;
+
+    if( in.containsStrA( new StrA(
+    ".leadvilleherald.com/special_editions/" )))
+      return false;
+
+    if( in.containsStrA( new StrA(
+    ".leadvilleherald.com/eedition/" )))
+      return false;
+
+
+
+
+    if( in.containsStrA( new StrA(
+        ".leadvilleherald.com/" )))
+      return true;
+
+    return false;
+*/
+
 
 /*
 
